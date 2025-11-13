@@ -2,7 +2,7 @@
 builder = "NIXPACKS"
 
 [deploy]
-startCommand = "python app.py"
+startCommand = "uvicorn src.api.main:app --host 0.0.0.0 --port 8000"
 
 [build.nixpacks]
 python = "3.11"
